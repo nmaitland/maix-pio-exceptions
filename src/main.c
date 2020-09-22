@@ -14,12 +14,17 @@
  */
 #include <stdio.h>
 extern void do_exception_test();
+extern int dma_open_free();
 
 int main(void)
 {
     printf("Started\n");
 
     do_exception_test();
+
+        // uintptr_t dma_write = dma_open_free();
+        // uintptr_t dma_read = dma_open_free();
+
 
     printf("Done\n");
    while (1)
